@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+												
+	<bean id="employee1" class="com.spring.entity.Employee">
+		<constructor-arg index="0" value="10"/>
+		<constructor-arg index="1" value="Chaman"/>
+		<constructor-arg  index="2" value="chaman@gmail.com"/>
+		<constructor-arg  index="3" value="20000.50"/>
+	</bean>
+
+	<bean id="employee2" class="com.spring.entity.Employee">
+		<property name="employeeNo" value="20"/>
+		<property name="employeeName" value="Shareef"/>
+		<property name="email" value="Sha@gmail.com"/>
+		<property name="salary" value="2321.2132"/>
+	</bean>
+
+	<bean id="employeeDao" class="com.spring.service.EmployeeInMemImpl">
+	</bean>	
+	
+	<!-- Autowire by name -->
+	<bean id="employeeService1" class="com.spring.service.EmployeeServiceImpl" autowire="byName">
+		
+	</bean>
+
+	<!-- Autowire by Type -->
+	<bean id="employeeService2" class="com.spring.service.EmployeeServiceImpl" autowire="byType">
+		
+	</bean>
+
+	<!-- Autowire by constructor -->
+	<bean id="employeeService3" class="com.spring.service.EmployeeServiceImpl" autowire="constructor">
+		
+	</bean>
+
+</beans>
+	
+	
