@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+	<bean id="employee1" class="com.spring.Employee">
+		<constructor-arg value="10"/>
+		<constructor-arg value="Chaman1"/>
+		<constructor-arg value="chaman@gmail.com"/>
+		<constructor-arg value="20000.50"/>
+	</bean>
+												
+	<bean id="employee2" class="com.spring.Employee">
+		<constructor-arg index="0" value="20"/>
+		<constructor-arg index="1" value="Chaman2"/>
+		<constructor-arg  index="2" value="chaman@gmail.com"/>
+		<constructor-arg  index="3" value="20000.50"/>
+	</bean>
+
+	<bean id="employee3" class="com.spring.Employee">
+		<constructor-arg type="int" value="30"/>
+		<constructor-arg type="java.lang.String" value="Chaman3"/>
+		<constructor-arg  type="java.lang.String" value="chaman@gmail.com"/>
+		<constructor-arg  type="double" value="20000.50"/>
+	</bean>
+
+</beans>
+	
+	
