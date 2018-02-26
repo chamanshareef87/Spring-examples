@@ -1,3 +1,4 @@
+usr:chamanshareef87
 got parent folder of which u want to check in
 C>git init
 prepare project to add git
