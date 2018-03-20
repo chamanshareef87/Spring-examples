@@ -18,3 +18,7 @@ push added files to repository
 
 C>git push -u origin master
 
+>>>>>>>
+If not working then create temp directory
+clone git in new temp folder
+copy changes into new project and follow above steps
